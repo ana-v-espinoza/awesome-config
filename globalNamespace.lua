@@ -7,8 +7,9 @@ gn.configDir = os.getenv("HOME") .. "/.config/awesome/"
 
 -- This is used later as the default terminal and editor to run.
 gn.terminal = "x-terminal-emulator"
-gn.editor = os.getenv("EDITOR") or "vim"
-gn.editor_cmd = gn.terminal .. " -e " .. gn.editor
+gn.terminal = "gnome-terminal"
+gn.editor = "vim"
+gn.editor_cmd = gn.terminal .. " -- " .. gn.editor
 
 -- Default modkey.
 -- Usually, Mod4 is the key with a logo between Control and Alt.
