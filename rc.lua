@@ -167,6 +167,7 @@ end)
 -- {{{ Mouse bindings
 root.buttons(gears.table.join(
     awful.button({ }, 3, function () gn.menu.mymainmenu:toggle() end)
+    -- Disable scroll to switch tags on root
     -- awful.button({ }, 4, awful.tag.viewnext),
     -- awful.button({ }, 5, awful.tag.viewprev)
 ))
@@ -315,3 +316,7 @@ end)
 client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
+--
+
+-- Autorun stuff
+awful.spawn.with_shell("~/.config/awesome/autorun.sh")
