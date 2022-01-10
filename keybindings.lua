@@ -22,7 +22,7 @@ kb.globalkeys = gears.table.join(
         end,
         {description = "focus previous by index", group = "client"}
     ),
-    awful.key({ gn.modkey,           }, "w", function () mymainmenu:show() end,
+    awful.key({ gn.modkey,           }, "w", function () gn.menu.mymainmenu:show() end,
               {description = "show main menu", group = "awesome"}),
 
     -- Layout manipulation

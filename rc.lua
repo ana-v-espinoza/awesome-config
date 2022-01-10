@@ -142,7 +142,7 @@ awful.screen.connect_for_each_screen(function(s)
         s.separatortop,
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
-            gn.widgets.mykeyboardlayout,
+            --gn.widgets.mykeyboardlayout,
             wibox.widget.systray(),
             gn.widgets.mytextclock,
             s.mylayoutbox,
@@ -166,9 +166,9 @@ end)
 
 -- {{{ Mouse bindings
 root.buttons(gears.table.join(
-    awful.button({ }, 3, function () gn.menu.mymainmenu:toggle() end),
-    awful.button({ }, 4, awful.tag.viewnext),
-    awful.button({ }, 5, awful.tag.viewprev)
+    awful.button({ }, 3, function () gn.menu.mymainmenu:toggle() end)
+    -- awful.button({ }, 4, awful.tag.viewnext),
+    -- awful.button({ }, 5, awful.tag.viewprev)
 ))
 -- }}}
 
