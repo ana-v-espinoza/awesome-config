@@ -93,8 +93,8 @@ kb.globalkeys = gears.table.join(
     awful.key({ gn.modkey }, "a", function () awful.spawn("pavucontrol -t 3") end,
     		{description = "open audio control", group = "pc control"}),
     -- Take Screenshot
-    awful.key({  }, "Print", function () awful.spawn("flameshot full -p /home/ana/Pictures/goil/") end,
-    		{description = "GOIL", group = "pc control"}),
+    awful.key({  }, "Print", function () awful.spawn("flameshot full -p /home/ana/Pictures/") end,
+    		{description = "Screenshot tool", group = "pc control"}),
 
     -- Edit Configs
     awful.key({ gn.modkey, "Shift" }, "b", function () awful.spawn(gn.editor_cmd .. " " .. os.getenv("HOME") .. "/.bashrc") end,
